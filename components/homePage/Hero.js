@@ -1,4 +1,4 @@
-import styled from '../styles/Hero.module.css';
+import styled from './Hero.module.css';
 import Image from 'next/image';
 const Hero = () => {
   return (
