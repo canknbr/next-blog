@@ -2,9 +2,15 @@ import React from 'react';
 import FeaturedPost from '../components/homePage/FeaturedPost.js';
 import Hero from '../components/homePage/Hero.js';
 import { getFeaturedPosts } from '../lib/utils.js';
+import Head from 'next/head';
+
 const HomePage = ({ posts }) => {
   return (
     <>
+      <Head>
+        <title>Can's Blog</title>
+        <meta name="description" content="Can's Blog" />
+      </Head>
       <Hero />
       <FeaturedPost posts={posts} />
     </>
