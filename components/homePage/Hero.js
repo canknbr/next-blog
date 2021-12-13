@@ -11,8 +11,8 @@ const Hero = () => {
           height={300}
         />
       </div>
-      <h1>Hi, I'm Can</h1>
-      <p>I'm a frontend developer based in Ankara, TR.</p>
+      <h1>Hi, I am Can</h1>
+      <p>I am a frontend developer based in Ankara, TR.</p>
     </section>
   );
 };
