@@ -1,7 +1,10 @@
-import React from 'react';
-
+import PostContent from '../../components/post/post-detail/postContent';
 const PostDetailPage = () => {
-  return <div></div>;
+  return (
+    <div>
+      <PostContent />
+    </div>
+  );
 };
 
 export default PostDetailPage;
