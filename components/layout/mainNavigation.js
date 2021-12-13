@@ -9,7 +9,7 @@ const mainNavigation = () => {
           <Link href="/post">Post</Link>
         </li>
         <li>
-          <Link href="/contact">Link</Link>
+          <Link href="/contact">Contact</Link>
         </li>
       </ul>
     </header>

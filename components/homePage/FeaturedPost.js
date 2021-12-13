@@ -1,4 +1,3 @@
-// import styled from '../styles/FeaturedPost.module.css'
 import PostGrid from '../post/postGrid';
 import styled from './FeaturedPost.module.css';
 const FeaturedPost = ({ posts }) => {

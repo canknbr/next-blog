@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styled from './postItem.module.css';
+import { useState } from 'react';
 const PostItem = ({ post }) => {
+  const [isShow, setIsShow] = useState(false);
   const { title, image, excerpt, slug, date } = post;
   const formattedDate = new Date(date).toLocaleDateString('en-US', {
     year: 'numeric',
@@ -20,7 +22,7 @@ const PostItem = ({ post }) => {
           <div className={styled.content}>
             <h3>{title}</h3>
             <time>{formattedDate}</time>
-            <p>{excerpt}</p>
+            <p>{isShow ? excerpt : `${excerpt.substring(0, 200)}...`}</p>
           </div>
         </a>
       </Link>
